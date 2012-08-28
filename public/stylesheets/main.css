@@ -1,0 +1,584 @@
+@charset "UTF-8";
+	html {
+	background:#fbfaf9;
+}
+
+body {
+	
+	font:1em/1.5 "Sabon Next W01 Display", "Times New Roman", Times, serif;
+	color:#555;
+	margin:0;
+	min-height:500px;
+	min-width:980px;
+	position:relative;
+}
+
+h1 {
+	font:4em/1 "Avenir LT W01 95 Black", sans-serif;
+	text-transform:uppercase;
+	color:#272423;
+	text-align:center;
+	text-shadow:1px 2px 0 #f9f9f7,  3px 6px 0 #e7e6e2;
+	letter-spacing:.09em;
+	margin:0 0 24px;
+}
+
+h1 > span {
+	display:block;
+	font-size:.375em;
+	margin:0 0 25px;
+	text-shadow:none;
+}
+
+h1 > .amp {
+	background:url(//assets.kyan.com/assets/bg_amp-9010d02136aa1a26aa113b3e90226a63.png) no-repeat top;
+	height:59px;
+	text-indent:-9999px;
+}
+
+h1 > .demark::before {
+	content:" ";
+	font-size:.66em;
+	vertical-align:3px;
+}
+
+h1 > .demark::after {
+	content:" ";
+	font-size:.66em;
+	vertical-align:3px;
+}
+
+h1 > span > span {
+	position:absolute;
+	left:-9999px;
+}
+
+h1 + h2 {
+	color:#9c8d6c;
+	font:1.313em/1.095 "Sabon Next W01 Display", "Times New Roman", Times, serif;
+	text-align:center;
+}
+
+h2 {
+	font:1.313em/1.714 "Avenir LT W01 85 Heavy", sans-serif;
+	color:#272423;
+	margin:0 0 15px;
+}
+
+h3 {
+	font:1.313em/1.333 "Avenir LT W01 85 Heavy", sans-serif;
+	color:#272423;
+	margin:0 0 24px;
+}
+
+p {
+	margin:0 0 24px;
+}
+
+p.intro {
+	font-size:1.3125em;
+	line-height:1.333;
+	color:#9c8d6c;
+	margin:0 0 48px;
+}
+
+p.intro em {
+	font-style:normal;
+	font-family:"SabonNextW01-DisplayIta", serif;
+}
+
+p.further {
+	font:0.875em/1.714 "Avenir LT W01 85 Heavy", sans-serif;
+	margin:0;
+}
+
+p.meta {
+	font:0.688em/1.636 "Avenir LT W01 85 Heavy", sans-serif;
+	text-transform:uppercase;
+	width:135px;
+	margin:0 0 32px;
+	text-align:center;
+	padding:0 0 14px;
+	background:url(//assets.kyan.com/assets/bg_meta-54ab7b07fce8963c6c15217b8e0bcf40.png) no-repeat bottom;
+}
+
+p.meta img {
+	display:block;
+	margin:0 auto 6px;
+}
+
+p.tel, p.email {
+	font:1.5em/1.19 "Avenir LT W01 85 Heavy", sans-serif;
+	color:#272423;
+	margin:0 0 12px;
+}
+
+address {
+	font-style:normal;
+	margin:0 0 24px;
+}
+
+ul, ol {
+	margin:0 0 24px 20px;
+	padding:0;
+}
+
+.number {
+	font-family:"AlternateGothicW01-No1", sans-serif;
+	line-height:1;
+	color:#a69675;
+}
+
+.list {
+	font:1.5em/1.1 "AlternateGothicW01-No1", sans-serif;
+	margin:0 0 20px;
+	text-transform:uppercase;
+}
+
+table {
+	width:100%;
+	border-collapse:collapse;
+	margin:0 0 24px;
+}
+
+th {
+	vertical-align:bottom;
+	text-align:left;
+	padding:0 20px 5px 0;
+	border-bottom:3px solid #dcdcd5;
+	white-space:nowrap;
+	font-weight:normal;
+	font-family:"Avenir LT W01 85 Heavy", sans-serif;
+}
+
+td {
+	vertical-align:top;
+	padding:5px 20px 5px 0;
+	border-bottom:1px solid #dcdcd5;
+}
+
+abbr {
+	border:0;
+	cursor:help;
+}
+
+cite {
+	font-style:normal;
+	font-family:"SabonNextW01-DisplayIta", serif;
+}
+
+time {
+	color:#888;
+}
+
+code {
+	font:12px/16px Inconsolata, Consolas, Monaco, "Courier New", monospace;
+}
+
+pre > code {
+	display:block;
+	background:#1b293d url(//assets.kyan.com/assets/bg_code-35ba4f054a3b3bbfc2dc857a3cc7fd2f.png) repeat-y 0 0;
+	padding:22px 10px;
+	color:#a4adb9;
+	counter-reset:code;
+	white-space:pre-wrap;
+	#word-wrap:break-word;
+}
+
+code > span {
+	display:block;
+	padding-left:40px;
+	background:url(//assets.kyan.com/assets/bg_code-35ba4f054a3b3bbfc2dc857a3cc7fd2f.png) repeat-y -510px 0;
+	#background:none;
+}
+
+code > span::before {
+	float:left;
+	margin-left:-40px;
+	width:17px;
+	text-align:right;
+	background:#243248;
+	color:#708098;
+	text-shadow:0 -1px 0 #0e141d;
+	content:counter(code);
+	counter-increment:code;
+}
+
+a {
+	color:#0d96cd;
+	text-decoration:none;
+	-moz-transition:.3s color;
+	-webkit-transition:.3s color;
+	-ms-transition:.3s color;
+	-o-transition:.3s color;
+}
+
+a:focus, a:hover {
+	color:#0f698d;
+}
+
+img {
+	border:0;
+	-ms-interpolation-mode:bicubic;
+}
+
+.more > a, .pagination > a {
+	font-style:normal;
+	font-family:"Avenir LT W01 85 Heavy", sans-serif;
+	display:inline-block;
+	background:url(//assets.kyan.com/assets/bg_more-43951200cb7ed53cba95778c201d4b9e.png) no-repeat left;
+	padding-left:8px;
+}
+
+.button {
+	text-align:center;
+}
+
+.button > span {
+	display:block;
+	margin:0 0 25px;
+}
+
+.button > a {
+	display:inline-block;
+	margin:0 auto 10px;
+	background:#0d96cd url(//assets.kyan.com/assets/bg_button_link-2b8d6529d9a2ae2c269b26b298dc1af2.png);
+	font-size:1.4375em;
+	font-family:"Avenir LT W01 85 Heavy", sans-serif;
+	color:#fff;
+	padding:18px 61px;
+	-moz-transition:.3s background-color;
+	-webkit-transition:.3s background-color;
+	-ms-transition:.3s background-color;
+	-o-transition:.3s background-color;
+}
+
+.button > a:hover {
+	background-color:#0f698d;
+}
+
+blockquote, .attract {
+	background:url(//assets.kyan.com/assets/bg_blockquote-e44b04b4f4e36a7fc063c06aed641978.png) no-repeat 50% 0;
+	padding:64px 65px 0;
+	margin:0 0 116px;
+	text-align:center;
+}
+
+.attract {
+	padding-top:0;
+	background:none;
+}
+
+blockquote > p, .attract p {
+	font-size:2.125em;
+	line-height:1.147;
+	color:#9c8d6c;
+	margin:0 0 15px;
+}
+
+blockquote > footer {
+	font-size:.625em;
+	line-height:1.6;
+	font-family:"Avenir LT W01 85 Heavy", sans-serif;
+	text-transform:uppercase;
+	padding:14px 0 0;
+	background:url(//assets.kyan.com/assets/bg_blockquote_footer-89f5adcb010cd7d2328fd9551a48f5db.gif) no-repeat top;
+	display:block;
+}
+
+blockquote > footer > p > b {
+	font-weight:normal;
+	font-family:"Avenir LT W01 95 Black", sans-serif;
+}
+
+button {
+	cursor:pointer;
+}
+
+button > img {
+	display:block;
+}
+
+button::-moz-focus-inner {
+	padding:0;
+}
+
+article {
+	clear:both;
+	display:block;
+	zoom:1;
+}
+
+article:after {
+	content:"";
+	clear:both;
+	display:block;
+}
+
+section {
+	display:block;
+}
+
+form {
+	margin:0 0 50px;
+	padding:0;
+}
+
+fieldset {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+fieldset > div {
+	margin:0 0 34px;
+	width:490px;
+}
+
+fieldset > div:after {
+	content:".";
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+}
+
+fieldset > .row_leader {
+	clear:left;
+}
+
+.additional_fields {
+	position:absolute;
+	left:-9999px;
+}
+
+fieldset > .buttons {
+	margin-top:-12px;
+	clear:left;
+}
+
+fieldset > .buttons > p {
+	margin:18px 0 0;
+}
+
+label, .label {
+	font:0.75em/1.25 "Avenir LT W01 95 Black", sans-serif;
+	text-transform:uppercase;
+	display:block;
+	margin:0 0 8px;
+}
+
+label > span {
+	color:#9c8d6c;
+	font:1.17em/1 "SabonNextW01-DisplayIta", serif;
+	text-transform:none;
+	margin-left:5px;
+}
+
+input.text, textarea {
+	color:#555;
+	font:1em/20px "Sabon Next W01 Display", serif;
+	background:#fff;
+	padding:10px;
+	width:450px;
+	border:1px solid #d6d6cb;
+	border-radius:3px;
+}
+
+textarea {
+	height:203px;
+}
+
+.full_width > textarea {
+	width:940px;
+}
+
+input[type=radio], input[type=checkbox] {
+	margin:0 5px 0 0;
+}
+
+input[type=submit], button.submit {
+	font:1.125em/1 "Avenir LT W01 85 Heavy", sans-serif;
+	color:#fff;
+	text-shadow:0 1px 2px rgba(60, 60, 60, 0.75);
+	border:0;
+	background:#0d96cd url(//assets.kyan.com/assets/bg_submit-4c0c1cdd312fb31b7281523c58ef339a.png) repeat-x bottom;
+	border-radius:4px;
+	padding:10px 31px 7px;
+	box-shadow:1px 1px 0 0 rgba(201, 201, 191, 0.75);
+	margin:0 20px 0 0;
+}
+
+label.error {
+	color:#ce5700;
+	float:right;
+	margin:-23px 18px 0 0;
+}
+
+input.text.error, textarea.error {
+	background-image:url(//assets.kyan.com/assets/bg_input_error-31a7a8d06bec7b19f68b6c7fcaa2e591.png);
+	border-color:#d87933;
+	box-shadow:none;
+}
+
+#container {
+	width:980px;
+	margin:0 auto;
+}
+
+#header {
+	padding:23px 0 0;
+	margin:0 0 72px;
+	display:block;
+}
+
+#logo {
+	height:100px;
+	padding:0 0 14px;
+	border-bottom:3px solid #dcdcd5;
+}
+
+#logo > a {
+	position:absolute;
+	margin-left:230px;
+	margin-top: -28px;
+	z-index:-.5;
+}
+
+#logo > p {
+	position:relative;
+	color:#9c8d6c;
+	letter-spacing:.07em;
+	margin:0;
+}
+
+#logo > p > b {
+	position:absolute;
+	top:7px;
+	right:0;
+	padding:34px 0 0;
+	height:56px;
+	width:326px;
+	border:dashed #dcdcd5;
+	border-width:0 0 0 1px;
+	text-align:center;
+	font:1.313em/1 "SabonNextW01-DisplayIta", serif;
+}
+
+#logo > p > b:first-child {
+	right:auto;
+	left:0;
+	border-width:0 1px 0 0;
+	width:327px;
+}
+
+#logo > p > span {
+	position:absolute;
+	left:-9999px;
+}
+
+#logo_animation {
+	position:absolute;
+	top:-15px;
+	left:50%;
+	margin:0 0 0 -90px;
+	z-index:1;
+}
+
+#nav {
+	font:0.813em/1 "Avenir LT W01 85 Heavy", sans-serif;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:.05em;
+	color:#f8f8f6;
+	margin:0 1px;
+	display:block;
+}
+
+#nav > ul {
+
+	margin-left: auto;
+	margin-right: auto;
+	padding:0;
+	list-style:none;
+	zoom:1;
+}
+
+#nav > ul:after {
+	content:"";
+	clear:both;
+	display:block;
+}
+
+#nav li {
+	float:left;
+	margin-left: 28px;
+}
+
+#nav a {
+	color:#272423;
+	display:block;
+	padding:25px 0 0;
+	height:46px;
+	width:163px;
+	background:url(../images/bg_nav.png) no-repeat 0 100%;
+}
+
+#nav a:focus, #nav a:hover {
+	color:#0d96cd;
+}
+
+#nav_home a {
+	background-position:-1px 100%;
+}
+
+#section_home #nav_home > a, #section_about #nav_about > a, #section_projects #nav_projects > a, #section_services #nav_services > a, #section_blog #nav_blog > a, #section_contact #nav_contact > a {
+	background-position:-164px 100%;
+	color:#9c8d6c;
+}
+
+#section_home #nav_home > a {
+	background-position:-165px 100%;
+}
+
+#sub_nav {
+	border-bottom:1px solid #dcdcd5;
+	text-align:center;
+	font:0.875em/1.214 "Avenir LT W01 85 Heavy", sans-serif;
+	padding:10px 0 19px;
+	color:#a69675;
+	display:block;
+}
+
+#sub_nav > ul {
+	display:inline;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#sub_nav li {
+	display:inline;
+	border-left:1px solid #dcdcd5;
+	margin:0 0 0 9px;
+	padding:0 0 0 13px;
+}
+
+#sub_nav li:first-child {
+	border-left:0;
+	padding-left:0;
+	margin-left:0;
+}
+
+#sub_nav a {
+	color:#555;
+}
+
+#sub_nav a:focus, #sub_nav a:hover {
+	color:#0d96cd;
+}
+
+footer{
+	text-align: center;
+	font-family: "Segoe UI",Times, Helvetica;
+}
