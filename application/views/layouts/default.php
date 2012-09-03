@@ -16,7 +16,7 @@
 	<div id="container">
 		<header id="header">
 			<div id="logo">
-				<a href="/"><img alt="Kyan, established 2003." src="../public/images/Club Logo_trans.png" /></a>
+				<a href="/"><img alt="ECE Club of NJIT." src="../public/images/Club Logo_trans.png" /></a>
 			</div>
 <!-- 			<canvas id="logo_animation" width="180" height="180"></canvas>
  -->			<nav id="nav">
@@ -32,11 +32,13 @@
   <?php echo $template['body']; ?>
 
   <footer>
-  	Designed by the anmtrn
+  	Designed by the <a href="http://web.njit.edu/~hr28/">anmtrn</a>.
+  </br>
+   Electrical and Engineering Club
   </footer>
 
-      <script src="../public/javascript/bootstrap-carousel.js"></script>
-	  <script src="../public/javascript/bootstrap-modal.js"></script>
-		  <script src="../public/javascript/jquery.js"></script>
-			
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="../public/javascript/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="../public/javascript/bootstrap-popover.js"></script>
+
 </html>
